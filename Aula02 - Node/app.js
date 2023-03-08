@@ -11,4 +11,6 @@ app.get("/contato", function(req, res){
     res.send("<h1>Pagina de contato</h1>")
 })
 
-app.listen(8081)
+app.listen(8081, () => {
+    console.log("[server] WORKING http://localhost:8081");
+})
